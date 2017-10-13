@@ -24,7 +24,7 @@ export const fetchCheesesError = (error) => ({
 
 export const fetchCheeses = () => (dispatch) => {
     dispatch(fetchCheesesRequest());
-    return fetch(SERVER_URL)
+    return fetch(`${SERVER_URL}/cheeses`)
         .then(res => {
             if (!res.ok) {
                 return dispatch(fetchCheesesError(res.statusText));
