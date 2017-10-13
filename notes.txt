@@ -1,0 +1,1 @@
+SERVER_URL="https://friday-cheeses.herokuapp.com/api" npm run build

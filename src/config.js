@@ -1,1 +1,1 @@
-export const SERVER_URL = 'http://localhost:8080/api/cheeses';
+export const SERVER_URL = process.env.REACT_APP_BASE_URL || 'http://localhost:8080/api/cheeses';
