@@ -11,6 +11,7 @@ export class CheeseList extends React.Component {
     render(){
         return (
             <ul>
+                <li>green cheese</li>
                 {this.props.cheeses.map(cheese => (
                     <li>{cheese}</li>
                 ))}
